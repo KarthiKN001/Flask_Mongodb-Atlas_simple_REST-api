@@ -4,9 +4,9 @@ link = "< ********* Here you need to paste the link of Mongodb Atlas for connect
 
 
 client = pymongo.MongoClient(link)
-mydb = client["Joker"]
-coll = mydb["demo"]
-
+mydb = client["Joker"]                  # your database name
+coll = mydb["demo"]                # your collection name
+                                          
 
 def add_item(name, price, quantity):
     new_stock = {
